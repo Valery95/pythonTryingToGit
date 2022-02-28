@@ -1,8 +1,12 @@
-print('Hello, World!')
-x = int(input('Enter the x '))
-y = 10
-z = x - y
-print(x)
-print(y)
-print(z)
-print('x * y = ', x * y)
+import platform
+import sys
+
+info = 'OS info is \n{}\n\nPython version is {} {}'.format(
+    platform.uname(),
+    sys.version,
+    platform.architecture(),
+)
+print(info)
+
+with open('os_info.txt', 'w', encoding='utf8') as file:
+    file.write(info)
