@@ -5,3 +5,4 @@ z = x - y
 print(x)
 print(y)
 print(z)
+print('x * y = ', x * y)
